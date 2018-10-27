@@ -1,20 +1,22 @@
 #include <sttdio.h>
 
+void swap(int x,int y)
+{
+	int temp= *x;
+	*x= *y;
+	*y=temp;
+}
+
  void man()
 { 
 	int x= 10;
 	int y= 5;
-	int temp;
-
+	
 	printf("Value before swap is x=%d and y=%d",x,y);
 
-	temp=y;
-	y=x;
-	x=temp;
-
+	swap(&x, &y);
 	printf("Values after swap is x=%d and y=%d",x,y);
 
 	getch();
 
 }
-
