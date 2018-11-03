@@ -7,7 +7,7 @@ void swap(int x,int y)
 	*y=temp;
 }
 
- void man()
+ void main()
 { 
 	int x= 10;
 	int y= 5;
